@@ -1,13 +1,21 @@
+body {
+  background-color: #BCD8C1;
+  font-family: 'Merriweather', serif;
+}
+
 .container {
   display: grid;
-  grid-template-columns: repeat(16, 30px);
+  grid-template-columns: repeat(16, 1fr);
   justify-content: center;
+  margin: 10px 200px;
 }
 
 .container > div {
   width: 100%;
-  border: 1px solid black;
+  border: 0px solid lightgrey;
+  background-color: white;
 }
+
 
 .container > div::before {
   content: "";
@@ -15,6 +23,26 @@
   display: block;
 }
 
-.container > div:hover {
-  background-color: blue;
+.ui {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #E57A44;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 50px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #C5541B;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
 }
