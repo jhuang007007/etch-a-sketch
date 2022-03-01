@@ -1,3 +1,20 @@
 .container {
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(16, 30px);
+  justify-content: center;
+}
+
+.container > div {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.container > div::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.container > div:hover {
+  background-color: blue;
 }
